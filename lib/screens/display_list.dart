@@ -13,7 +13,7 @@ class DisplayWidgets extends StatelessWidget {
       builder: (BuildContext context, List<DataModel> datalist, Widget? child) {
         return ListView.separated(
           itemBuilder: (context, index) {
-            final data=datalist[index];
+            final data = datalist[index];
             return ListTile(
               title: Text(data.name),
               subtitle: Text(data.age),

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:hive_db_project/db/function/db_function.dart';
 import 'package:hive_db_project/screens/add_field_widget.dart';
 
 import 'display_list.dart';
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    getAllData();
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(

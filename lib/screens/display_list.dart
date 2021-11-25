@@ -17,6 +17,10 @@ class DisplayWidgets extends StatelessWidget {
             return ListTile(
               title: Text(data.name),
               subtitle: Text(data.age),
+              trailing: IconButton(onPressed: (){
+                data.id!= null ? deleteData(data.id!): print("Id doesnot Exit");
+               
+              }, icon: Icon(Icons.delete,color: Colors.red,)),
             );
           },
           itemCount: datalist.length,

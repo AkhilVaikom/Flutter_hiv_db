@@ -5,10 +5,13 @@ part 'db_model.g.dart';
 
 class DataModel{
   @HiveField(0)
-  final String name;
+  int ? id;
 
   @HiveField(1)
+  final String name;
+
+  @HiveField(2)
   final String age;
 
-  DataModel({required this.name,required this.age});
+  DataModel({required this.name,required this.age,this.id});
 }

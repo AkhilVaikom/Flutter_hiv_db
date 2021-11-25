@@ -67,12 +67,13 @@ class AddFieldWidget extends StatelessWidget {
     final _name = textName.text;
     final _age = textAge.text;
 
-    if(_name.isEmpty || _age.isEmpty){
+    if (_name.isEmpty || _age.isEmpty) {
       return;
-    }
-    else{
-      final data= DataModel(age: _age,name: _name);
+    } else {
+      final data = DataModel(age: _age, name: _name);
       addData(data);
+      textName.clear();
+      textAge.clear();
     }
   }
 }
